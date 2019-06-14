@@ -1,17 +1,14 @@
 <div
-class="fruit-item"
-*ngFor="let fruit of fruits; let i = index"
-[]
+  class="fruit-item"
+  *ngFor="let fruit of fruits; let i = index"
+  [style.background-color]="fruit.color"
 >
-  <span>{{ fruit.id }}</span>
+  <span class="fruit-id">{{ fruit.id }}</span>
 
-  <h3>{{ fruit.name }}</h3>
+  <h3 class="fruit-name">{{ fruit.name }}</h3>
 
   <div class="fruit-buttons">
     <button (click)="moveFruitUp(i)">up</button>
     <button (click)="moveFruitDown(i)">down</button>
   </div>
 </div>
-iv>
-
-iv>

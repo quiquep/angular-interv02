@@ -4,6 +4,23 @@ ul {
 
 .fruit-item {
   background-color: rgba(255, 0, 0, 0.5);
-  padding: 8px;
   border: 1px solid white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.fruit-item .fruit-id {
+  border-right: 1px solid white;
+  padding: 8px;
+}
+.fruit-item .fruit-name {
+  border-right: 1px solid white;
+  padding: 8px;
+  flex: 1;
+}
+
+.fruit-item .fruit-buttons {
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
 }
